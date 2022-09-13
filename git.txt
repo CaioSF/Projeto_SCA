@@ -1,0 +1,48 @@
+2. No diretório do projeto local inicie o controle de versão do git:
+git init
+
+3. Insira todos os arquivos do projeto no controle de versão do git:
+git add .
+
+4. Faça o commit do projeto:
+git commit -m "descrição breve do commit"
+
+5. Configure no projeto local o endereço do servidor do repositório no GitHub:
+git remote add origin [endereço do repositório GitHub obtido no item 1]
+
+6. Confira se o endereço do repositório do GitHub está correto no projeto local:
+git remote -v
+
+7. Envie o projeto de seu computador para o GitHub:
+git push -u origin master
+
+Como atualizar um projeto no GitHub
+Para atualizar um projeto de sua máquina local no GitHub e fazer o controle de versão siga os passos abaixo:
+
+1. Insira todos os arquivos alterados do projeto no repositório local do Git:
+git add .
+
+2. Faça o commit do projeto. O flag -m permite colocar uma frase curta descrevendo a alteração executada no projeto:
+git commit -m "descrição breve do commit"
+
+7. Envie o projeto local para o branch master no GitHub. Caso esteja trabalhando em outro branch, substitua o nome master pelo nome do branch:
+git push -u origin master
+
+Como baixar um projeto do GitHub
+Para começar a trabalhar em um projeto hospedado no GitHub é necessário baixar o projeto para a máquina local. O recomendado é trabalhar em um branch ao invés de trabalhar no projeto master enquanto está em fase de desenvolvimento.
+
+Para baixar um projeto do GitHub para sua máquina local siga os passos abaixo:
+
+1. Faça o clone do projeto do GitHub em sua máquina:
+git clone [url do repositório no GitHub]
+
+Se você for trabalhar no branch master já pode iniciar suas alterações e atualizar o GitHub quando finalizar. Caso queira trabalhar em um branch diferente do master continue os próximos passos.
+
+2. Altere o projeto local para trabalhar com o branch desejado:
+git checkout [nome do branch]
+
+3. Se quiser verificar os branches que estão no repositório local:
+git branch
+
+4. Se quiser visualizar os branches que estão no projeto local e no GitHub:
+git branch -a
