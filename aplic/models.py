@@ -29,6 +29,10 @@ class Pessoa(models.Model):
     foto = StdImageField('Foto', null=True, blank=True, upload_to=get_file_path,
                          variations={'thumb': {'width': 480, 'height': 480, 'crop': True}})
 
+    facebook = models.CharField('Facebook', blank=True, max_length=200)
+    linkedin = models.CharField('LinkedIn', blank=True, max_length=200)
+    twitter = models.CharField('Twitter', blank=True, max_length=200)
+    instagram = models.CharField('Instagram', blank=True, max_length=200)
 
     class Meta:
         abstract = True
